@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<script>
+function moveBar() {
+  var elem = document.getElementById("medsBar");
+  var height = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (height >= 75) {
+      clearInterval(id);
+    } else {
+      height++;
+      elem.style.height = height + '%';
+    }
+  }
+}
+</script>
+</head>
+
+<body>
+
+
+<div id="masthead">
+<img src="images/pexels-photo-143654-slice.jpg" alt="Pills" />
+<nav>
+    <ul id="navlist">
+        <li>Home</li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="setup.html">Setup</a></li>
+        <li><a href="history.html">History</a></li>
+    </ul>
+</nav>
+</div>
+  
+<div id="content">
+<div id="button">
+    <button class="medButton" onclick="moveBar()">Check Your Meds Progress</button>
+</div>
+
+    <div class="roundedBar" id="medsProgress">
+  <div id="medsBar"></div>
+</div>
+
+
+	<h1>Prescription Tracker</h1>
+	<h2>Never forget to refill your prescription anymore!</h2>
+
+	<p>
+		The Prescription Tracker will track all your prescriptions and send you reminders for taking medicine, 
+        keeping track of your pills left till next refill, how many refills you have left, reminder to contact your doctor 
+        if you have 0 refills and need doctors authorization etc.
+
+	</p>
+	<p><img src="images/thermometer-temperature-fever-flu.jpg" alt="Pills" width="250"/></p>
+    <p>
+		Users will be able to add their medications to the app by designating names, dosages and schedules. Reminders will be generated based upon each medication's schedule. As a user takes their medications they can mark them as taken or skipped.  For medications not marked as taken or skipped, reminders will trigger. Reminders will be both on-screen and can be configured to push out to the user via SMS and/or email.  On-screen reminders will pop-up, allowing the user to  mark them as taken, missed, skipped.  The user can even "snooze" a pop-up reminder.
+
+	</p>
+
+
+</div>
+
+<div id="rightNav">
+
+<h3><Login</h3>
+<form id="login" action="" method="post">
+    Username: <input type="text" class="text" />
+    Password: <input type="text" class="text" />
+	<input type="submit" value="login" />
+
+</form>
+<p><img src="images/pexels-photo-163944.jpeg" alt="Pills" width="250"/></p>
+
+
+</div>
+
+
+<div id="footer">
+    <p >Copyright Aparna Giare 2016</p>
+    <p>All the materials prepared by teams in this course will be considered by default as being released under 
+        <a href="https://www.tldrlegal.com/l/afl3">Academic Free License 3.0.</a></p>
+</div>
+
+
+
+</body>
+</html>
