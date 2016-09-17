@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="masthead">
+    <img src="images/pexels-photo-143654-slice.jpg" alt="Pills" />
+<nav>
+    <ul id="navlist">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>Setup</li>
+        <li><a href="history.html">History</a></li>
+    </ul>
+</nav>
+</div>
+
+<div id="content">
+	<h1>Setup Prescription Tracker</h1>
+	<h2>Never forget to refill your prescription anymore!</h2>
+	<p>
+		The Prescription Tracker will track all your prescriptions and send you reminders for taking medicine, 
+        keeping track of your pills left till next refill, how many refills you have left, reminder to contact your doctor 
+        if you have 0 refills and need doctors authorization etc.
+
+	</p>
+<fieldset>
+
+    <form id="register" action="" method="post">
+        <legend>Register User:</legend>
+    Name: <input type="text" class="text" /><br/>
+    Email: <input type="text" class="text" /><br/>
+    Username: <input type="text" class="text" /><br/>
+    Password: <input type="text" class="text" /><br/>
+	<input type="submit" value="Submit" />
+    <input type="reset" value="Reset" onclick="this.form.reset()" /><br/>
+
+</form>
+</fieldset>
+<br/>
+<fieldset>
+
+    <form id="reminder" action="" method="post">
+        <legend>Setup Reminders:</legend>
+    Prescription Name: <input type="text" class="text" /><br/>
+    Reminder Email: <input type="text" class="text" /><br/>
+    Reminder Time: <input type="text" class="text" /><br/>
+    Number of pills: <input type="text" class="text" /><br/>
+	<input type="submit" value="Submit" />
+    <input type="reset" value="Reset"  onclick="this.form.reset()"/><br/>
+
+</form>
+</div>
+
+<div id="rightNav">
+
+<h3><Login</h3>
+<form id="login" action="" method="post">
+    Username: <input type="text" class="text" />
+    Password: <input type="text" class="text" />
+	<input type="submit" value="login" />
+
+</form>
+<p><img src="images/pexels-photo-163944.jpeg" alt="Pills" width="250"/></p>
+
+</div>
+
+<div id="footer">
+    <p >Copyright Aparna Giare 2016</p>
+    <p>All the materials prepared by teams in this course will be considered by default as being released under 
+             <a href="https://www.tldrlegal.com/l/afl3">Academic Free License 3.0.</a></p>
+</div>
+
+</body>
+
+</html>
