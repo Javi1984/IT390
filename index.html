@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script>
+//var acc = document.getElementsByClassName("mainFeature");
+document.addEventListener('DOMContentLoaded', function() {
+	var main1 = document.getElementsByClassName('mainFeature')[0];
+	var main2 = document.getElementsByClassName('mainFeature')[4];
+
+		main2.addEventListener('click', function(){
+		main2.nextElementSibling.classList.toggle('show');
+		});
+
+		main1.addEventListener('click', function(){
+		main1.nextElementSibling.classList.toggle('show');
+		});
+});
+</script>
+
+</head>
+
+<body id="top">
+<div id="wrapper">
+
+	<div class="header">
+	<h1><a href="index.html">Javier Prototype</a></h1>
+	</div> 
+
+	<div class="page">
+		<div class="col-r">
+		<div class="col-r-in">
+		<h2>Click Section 1 or 5 to view javascript functionality </h2>
+		<p>
+		Section 1: Team Formation <br />
+		Section 2: Linda Agile Lesson <br />
+		Section 3: Lynda Javascript tutorial <br />
+		Section 4: JavaScript exercise <br />
+		Section 5: Project functionality <br />
+		Section 6: Functionality basically repeat of index page <br />
+		</p>
+	
+
+
+<br />
+
+		</div>
+		</div> 
+
+	<div class="navBar">
+	
+	<h3 class="mainFeature">Section 1</h3>
+		<ul class="menu">
+			<li><a href="section1.html">Team Members</a></li>
+			<li><a href="section1.html">Team Contract</a></li>
+			<li><a href="section1.html">Team Strength</a></li>
+			<li><a href="section1.html">Team Weakness</a></li>
+		</ul>
+
+	<h3 class="mainFeature"><a href="lindaAgile.html">Section 2</a></h3>
+	<h3 class="mainFeature"><a href="JavaScriptCert.html">Section 3</a></h3>
+	<h3 class="mainFeature"><a href="javaScriptExample.html">Section 4</a></h3>
+	<h3 class="mainFeature">Section 5</h3>
+		<ul class="menu">
+			<li><a href="OriginalClassicFunc.html">Original Functionality</a></li>
+			<li><a href="OriginalClassicFunc.html">Classic Functionality</a></li>
+		</ul>
+	<h3 class="mainFeature"><a href="FunctionalityExample.html">Section 6</a></h3>
+
+<br />
+		</div> 
+
+<div class="spacing">&nbsp;</div>
+
+	
+
+	<div id="footer">
+		<p>Copyright@2016 Javier Argandona <br/> Privacy Policy
+	</div> 
+
+</div> 
+</body>
+</html>
